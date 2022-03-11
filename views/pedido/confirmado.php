@@ -20,7 +20,8 @@
             </tr>
             <?php while ($producto = $productos->fetch_object()) : ?>
                 <tr>
-                    <td><?php if ($producto->imagen != null) : ?>
+                    <td>
+                        <?php if ($producto->imagen != null) : ?>
                             <img src="<?= base_url ?>uploads/images/<?= $producto->imagen ?>" class="img_carrito">
                         <?php else : ?>
                             <img src=<img src="<?= base_url ?>assets/img/camiseta.png" class="img_carrito">

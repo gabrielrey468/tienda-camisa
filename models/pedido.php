@@ -1,6 +1,6 @@
 <?php
 
-class Pedido
+class pedido
 {
     private $id;
     private $usuario_id;
@@ -186,8 +186,6 @@ class Pedido
 
             $insert = "INSERT INTO lineas_pedidos VALUES(NULL, {$pedido_id}, {$producto->id}, {$elemento['unidades']})";
             $save = $this->db->query($insert);
-
-         
         }
 
         $result = false;
